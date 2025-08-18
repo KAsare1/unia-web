@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <LogoCloud />
+      {/* <LogoCloud /> */}
       <Features />
       <Features2 />
       <Features3 />
