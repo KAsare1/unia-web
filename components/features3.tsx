@@ -324,34 +324,34 @@ const TeamSection = () => {
                   }}
                 />
               </div>
-              <div className="flex items-center gap-4 text-gray-400 text-sm mt-2">
-                <span className="flex items-center gap-1.5 text-xs">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  >
-                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                  </svg>
-                  12 interested
-                </span>
-                <span className="flex items-center gap-1.5 text-xs">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  >
-                    <path d="M12 20V10M18 20V4M6 20v-4" />
-                  </svg>
-                  5 vendors
-                </span>
-              </div>
+              <div className="flex items-center gap-4 text-gray-400 dark:text-blue-200 text-sm mt-2">
+                  <span className="flex items-center gap-1.5 text-xs bg-gray-100 dark:bg-blue-900/40 px-2 py-1 rounded-md">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    12 interested
+                  </span>
+                  <span className="flex items-center gap-1.5 text-xs bg-gray-100 dark:bg-blue-900/40 px-2 py-1 rounded-md">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <path d="M12 20V10M18 20V4M6 20v-4" />
+                    </svg>
+                    5 vendors
+                  </span>
+                </div>
             </div>
           </motion.div>
         </div>
