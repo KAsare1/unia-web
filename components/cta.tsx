@@ -335,7 +335,7 @@ const MessageIcon = ({ className }: { className?: string }) => (
 );
 const CTA = () => {
   return (
-    <div className="relative w-full max-w-6xl mx-auto px-4 py-48 bg-gradient-to-br from-[#FBFBFB] via-[#FBFBFB] to-[#E8E8E8] border-t border-[#F3F3F3] dark:bg-gradient-to-br dark:from-[#1e293b] dark:via-[#334155] dark:to-[#0f172a] dark:border-[#334155]">
+    <div className="relative w-full max-w-6xl mx-auto px-4 py-48">
       {/* Floating Icons */}
       <div className="absolute inset-0">
         <div className="relative w-full h-full">
@@ -389,12 +389,12 @@ const CTA = () => {
 
       {/* Main Content */}
       <div className="relative z-20 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-2 text-gray-900 dark:text-gray-100">
-          Your Campus  <span className="text-[#3B82F6] dark:text-blue-400">Marketplace</span>
+        <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-2">
+          Your Campus  <span className="text-[#3B82F6]">Marketplace</span>
           <br />
-          Where Students <span className="text-[#3B82F6] dark:text-blue-400">Buy & Sell</span>
+          Where Students <span className="text-[#3B82F6]">Buy & Sell</span>
         </h1>
-        <Button href="/get-started" className="bg-[#3B82F6] hover:bg-[#2563EB] text-white px-8 py-3 rounded-full font-medium shadow-[0_1px_2px_rgba(0,0,0,0.2)] transition-all duration-200 dark:bg-blue-700 dark:hover:bg-blue-600">
+        <Button href="/get-started" className="bg-[#3B82F6] hover:bg-[#2563EB] text-white px-8 py-3 rounded-full font-medium shadow-[0_1px_2px_rgba(0,0,0,0.2)] transition-all duration-200">
           Get Started
         </Button>
         <div className="absolute -z-10 rounded-full max-w-3xl mx-auto bottom-0 w-full left-1/2 -translate-x-1/2 flex items-center justify-center">
@@ -403,7 +403,7 @@ const CTA = () => {
             dotSize={3}
             animationSpeed={1}
           />
-          <div className="absolute inset-0 h-full bg-radial/[in_oklch] from-white/80 via-white/90 to-white dark:from-blue-900/60 dark:via-blue-900/80 dark:to-blue-900/90" />
+          <div className="absolute inset-0 h-full bg-radial/[in_oklch] from-white/80 via-white/90 to-white" />
         </div>
       </div>
     </div>

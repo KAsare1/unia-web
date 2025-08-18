@@ -16,23 +16,21 @@ export function Hero() {
   return (
     <div
       ref={parentRef}
-      className="relative flex max-w-7xl rounded-b-3xl my-2 md:my-20 mx-auto flex-col items-center justify-center pt-32 overflow-hidden px-4 md:px-8
-        bg-gradient-to-t from-[rgba(59,130,246,1)] via-[rgba(239,246,255,1)] to-[rgba(255,255,255,1)]
-        dark:bg-gradient-to-t dark:from-[#0f172a] dark:via-[#1e293b] dark:to-[#334155]"
+      className="relative flex max-w-7xl rounded-b-3xl my-2 md:my-20  mx-auto flex-col items-center justify-center pt-32 overflow-hidden px-4 md:px-8 bg-gradient-to-t from-[rgba(59,130,246,1)]  via-[rgba(239,246,255,1)] to-[rgba(255,255,255,1)]"
     >
-  <div className="text-balance relative z-20 mx-auto mb-4 max-w-6xl text-center text-4xl font-semibold tracking-tight text-gray-700 dark:text-gray-100 md:text-7xl">
+      <div className="text-balance relative z-20 mx-auto mb-4 max-w-6xl text-center text-4xl font-semibold tracking-tight text-gray-700  md:text-7xl">
         <Balancer>
           <motion.h2
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className={cn(
-              "inline-block bg-gradient-to-b from-[rgba(94,94,94,1)] to-[rgba(0,0,0,1)] dark:from-gray-100 dark:to-blue-300",
+              "inline-block bg-gradient-to-b  from-[rgba(94,94,94,1)] to-[rgba(0,0,0,1)]",
               "bg-clip-text text-transparent"
             )}
           >
             Your Campus{" "}
-            <span className="bg-gradient-to-b from-[rgba(96,165,250,1)] to-[rgba(37,99,235,1)] dark:from-blue-400 dark:to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-b from-[rgba(96,165,250,1)] to-[rgba(37,99,235,1)] bg-clip-text text-transparent">
               Marketplace
             </span>
           </motion.h2>
@@ -41,12 +39,12 @@ export function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className={cn(
-              "inline-block bg-gradient-to-b from-[rgba(94,94,94,1)] to-[rgba(0,0,0,1)] dark:from-gray-100 dark:to-blue-300",
+              "inline-block bg-gradient-to-b from-[rgba(94,94,94,1)] to-[rgba(0,0,0,1)]",
               "bg-clip-text text-transparent py-2"
             )}
           >
             Where Students Buy & Sell{" "}
-            <span className="bg-gradient-to-b from-[rgba(96,165,250,1)] to-[rgba(37,99,235,1)] dark:from-blue-400 dark:to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-b from-[rgba(96,165,250,1)] to-[rgba(37,99,235,1)] bg-clip-text text-transparent">
               Smarter
             </span>
           </motion.h2>
@@ -56,7 +54,7 @@ export function Hero() {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.2, delay: 0.5 }}
-        className="relative z-20 mx-auto mt-4 max-w-2xl px-4 text-center text-base/6 text-gray-600 dark:text-gray-300 sm:text-base"
+        className="relative z-20 mx-auto mt-4 max-w-2xl px-4 text-center text-base/6 text-gray-600  sm:text-base"
       >
         Discover, shop, and support student businesses all in one place. UNIA
         makes it easy for students to sell, advertise, and find everything they
@@ -134,14 +132,14 @@ function BackgroundShape({
   return (
     <div className="absolute inset-0 z-0 flex items-center justify-center">
       <div
-        className="absolute z-0 rounded-full border border-white/30 dark:border-blue-900/40"
+        className="absolute z-0 rounded-full border border-white/30"
         style={{
           width: outer,
           height: outer,
         }}
       />
       <motion.div
-        className="absolute z-0 rounded-full border border-white dark:border-blue-800"
+        className="absolute z-0 rounded-full border border-white"
         style={{
           width: middle,
           height: middle,
@@ -168,10 +166,10 @@ function BackgroundShape({
         }}
       ></motion.div>
       <motion.div
-        className="absolute bg-white/5 dark:bg-blue-900/20 z-2 
+        className="absolute bg-white/5 z-2 
           rounded-full 
-          border border-[rgba(255,255,255,0.1)] dark:border-blue-900/30
-          shadow-[0_0_200px_80px_rgba(255,255,255,0.1)] dark:shadow-[0_0_200px_80px_rgba(30,58,138,0.15)]"
+          border border-[rgba(255,255,255,0.1)]
+          shadow-[0_0_200px_80px_rgba(255,255,255,0.1)]"
         style={{
           width: inner,
           height: inner,
