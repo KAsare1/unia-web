@@ -30,10 +30,14 @@ const pages = [
   ];
 
   const legal = [
-  { title: "Privacy Policy", href: "/privacy" },
-  { title: "Terms of Service", href: "/terms" },
-  { title: "Safety Guidelines", href: "/safety" },
-  { title: "Support", href: "/support" }
+    { title: "Privacy Policy", href: "/privacy" },
+    { title: "Terms of Service", href: "/terms" },
+    { title: "Safety Guidelines", href: "/safety" },
+    { title: "Support", href: "/support" },
+    {
+      title: "Request Account Deletion",
+      href: "/delete-account"
+    },
   ];
 
   return (
@@ -85,12 +89,32 @@ const pages = [
               <ul className="space-y-3">
                 {legal.map((item, idx) => (
                   <li key={idx}>
-                    <Link
-                      href={item.href}
-                      className="text-muted-foreground hover:text-foreground"
-                    >
-                      {item.title}
-                    </Link>
+                    {item.options ? (
+                      <div className="group relative">
+                        <button className="text-muted-foreground hover:text-foreground focus:outline-none">
+                          {item.title}
+                        </button>
+                        <ul className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity z-10">
+                          {item.options.map((opt, oidx) => (
+                            <li key={oidx}>
+                              <Link
+                                href={opt.href}
+                                className="block px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-gray-50"
+                              >
+                                {opt.label}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ) : (
+                      <Link
+                        href={item.href}
+                        className="text-muted-foreground hover:text-foreground"
+                      >
+                        {item.title}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
