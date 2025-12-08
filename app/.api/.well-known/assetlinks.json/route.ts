@@ -1,0 +1,24 @@
+
+
+import { NextResponse } from 'next/server';
+
+export async function GET() {
+  const assetlinks = [{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.astra.affordables",
+    "sha256_cert_fingerprints": [
+      "9A:DB:36:02:2B:10:C6:BF:13:C2:4D:70:A2:FD:F5:64:DC:05:01:ED:82:AB:A0:62:4E:85:93:CB:23:27:7F:A1",
+      "YOUR_RELEASE_SHA256_FINGERPRINT"
+    ]
+  }
+}];
+
+  return NextResponse.json(assetlinks, {
+    headers: {
+      'Content-Type': 'application/json',
+      'Cache-Control': 'public, max-age=3600',
+    },
+  });
+}
