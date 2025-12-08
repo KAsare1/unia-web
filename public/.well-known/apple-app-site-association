@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "RZ4LN5Z25F.com.astra.affordables",
+        "paths": [
+          "/product/*",
+          "/category/*",
+          "/favorites",
+          "/orders",
+          "*"
+        ]
+      }
+    ]
+  }
+}
