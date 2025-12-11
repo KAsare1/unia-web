@@ -1,10 +1,16 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.astra.affordables",
-    "sha256_cert_fingerprints": [
-      "9A:DB:36:02:2B:10:C6:BF:13:C2:4D:70:A2:FD:F5:64:DC:05:01:ED:82:AB:A0:62:4E:85:93:CB:23:27:7F:A1"
-    ]
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.astra.affordables",
+      "sha256_cert_fingerprints": [
+        "9A:DB:36:02:2B:10:C6:BF:13:C2:4D:70:A2:FD:F5:64:DC:05:01:ED:82:AB:A0:62:4E:85:93:CB:23:27:7F:A1",
+        "79:18:51:A0:4F:DC:F6:D0:6A:08:DD:64:39:7B:BD:3F:84:4B:9E:37:DC:DA:28:9D:54:32:2A:69:A7:86:B6:B2"
+      ]
+    }
   }
-}]
+]
