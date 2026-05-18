@@ -99,7 +99,7 @@ const DesktopNav = ({ navItems, visible }: NavbarProps) => {
         "hidden lg:flex flex-row self-center items-center justify-between py-3 mx-auto px-8 rounded-full relative z-[100]"
       )}
     >
-      <Logo />
+      <Logo variant="white" />
       <motion.div
         className="lg:flex flex-row flex-1 items-center justify-center space-x-2 text-sm"
         animate={{
@@ -212,7 +212,7 @@ const MobileNav = ({ navItems, visible }: NavbarProps) => {
         )}
       >
         <div className="flex flex-row justify-between items-center w-full">
-          <Logo />
+          <Logo variant="white" />
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             {open ? (
               <IconX className="text-black/90" onClick={() => setOpen(!open)} />

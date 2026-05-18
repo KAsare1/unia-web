@@ -126,6 +126,7 @@ const ChatSection = () => {
           <input
             type="text"
             placeholder="Write a message"
+            suppressHydrationWarning
             className="flex-1 outline-none text-sm bg-white placeholder-gray-400"
           />
           <div className="flex items-center gap-3 text-gray-400">

@@ -45,7 +45,7 @@ const pages = [
       <div className="max-w-7xl mx-auto px-8 py-20">
         <div className="flex flex-col md:flex-row justify-between gap-12">
           <div className="flex items-start flex-col">
-            <Logo />
+            <Logo variant="white" />
             <h2 className="text-2xl font-medium mt-8 max-w-md">
               Buy, sell, and succeed with your campus community.
             </h2>

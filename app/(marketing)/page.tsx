@@ -1,3 +1,4 @@
+import { AppDownloadSection } from "@/components/app-download-section";
 import CTA from "@/components/cta";
 import { FAQ } from "@/components/faq";
 import { Features } from "@/components/features";
@@ -18,6 +19,7 @@ export default function Home() {
       <Features3 />
       {/* <Pricing /> */}
       <Testimonials />
+      <AppDownloadSection />
       <FAQ />
       <section className="py-20 bg-blue-50 mt-12">
         <div className="max-w-3xl mx-auto px-4 text-center">
