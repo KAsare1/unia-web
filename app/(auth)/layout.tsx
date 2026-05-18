@@ -9,6 +9,11 @@ export const metadata: Metadata = {
   title: "UNIA",
   description:
     "UNIA is a platform for students to buy and sell items on campus.",
+  icons: {
+    icon: "/unia-icon.webp",
+    shortcut: "/unia-icon.webp",
+    apple: "/unia-icon.webp",
+  },
 };
 
 export default function AuthLayout({

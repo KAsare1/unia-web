@@ -10,7 +10,12 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "UNIA",
   description:
-    "UNIA is a platform that connects student entrepreneurs with resources and opportunities to help them succeed."
+    "UNIA is a platform that connects student entrepreneurs with resources and opportunities to help them succeed.",
+  icons: {
+    icon: "/unia-icon.webp",
+    shortcut: "/unia-icon.webp",
+    apple: "/unia-icon.webp",
+  },
 };
 
 export default function RootLayout({
