@@ -1,15 +1,12 @@
 import Link from "next/link";
 import { Logo } from "./logo";
 import {
-  IconBrandGithub,
   IconBrandInstagram,
   IconBrandLinkedin,
-  IconBrandTwitter,
   IconBrandFacebook,
   IconBrandX,
   IconBrandTiktok,
 } from "@tabler/icons-react";
-import { title } from "process";
 
 export function Footer() {
 const pages = [
@@ -30,10 +27,13 @@ const pages = [
   ];
 
   const legal = [
+    { title: "All Policies", href: "/policies" },
     { title: "Privacy Policy", href: "/privacy" },
     { title: "Terms of Service", href: "/terms" },
-    { title: "Safety Guidelines", href: "/safety" },
-    { title: "Support", href: "/support" },
+    { title: "Acceptable Use Policy", href: "/acceptable-use" },
+    { title: "Seller Policy", href: "/seller-policy" },
+    { title: "Refund and Dispute Policy", href: "/refund-dispute-policy" },
+    { title: "User Policy Summaries", href: "/policy-summaries" },
     {
       title: "Request Account Deletion",
       href: "/delete-account"

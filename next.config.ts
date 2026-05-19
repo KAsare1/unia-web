@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 import { withContentCollections } from "@content-collections/next";
 
 const nextConfig: NextConfig = {
+  distDir: process.env.NEXT_DIST_DIR || ".next",
   images: {
     remotePatterns: [
       { hostname: "assets.aceternity.com" },
