@@ -96,10 +96,10 @@ const DesktopNav = ({ navItems, visible }: NavbarProps) => {
         ease: "easeInOut",
       }}
       className={cn(
-        "hidden lg:flex flex-row self-center items-center justify-between py-3 mx-auto px-8 rounded-full relative z-[100]"
+        "hidden lg:flex min-h-12 flex-row self-center items-center justify-between overflow-visible py-0.5 mx-auto px-6 rounded-full relative z-[100]"
       )}
     >
-      <Logo variant="white" />
+      <Logo variant="white" className="-my-3 py-0" />
       <motion.div
         className="lg:flex flex-row flex-1 items-center justify-center space-x-2 text-sm"
         animate={{
@@ -189,7 +189,7 @@ const MobileNav = ({ navItems, visible }: NavbarProps) => {
           width: visible ? "85%" : "90%",
           y: visible ? 4 : 0,
           borderRadius: open ? "24px" : "full",
-          padding: "12px 20px",
+          padding: "4px 16px",
           boxShadow: visible
             ? "0 10px 30px -10px rgba(0,0,0,0.1)"
             : "0 0 0 transparent",
@@ -208,11 +208,11 @@ const MobileNav = ({ navItems, visible }: NavbarProps) => {
           ease: "easeInOut",
         }}
         className={cn(
-          "flex relative flex-col lg:hidden w-full justify-between items-center max-w-[calc(100vw-2rem)] mx-auto z-50"
+          "flex relative min-h-10 flex-col lg:hidden w-full justify-between items-center max-w-[calc(100vw-2rem)] mx-auto z-50 overflow-visible"
         )}
       >
         <div className="flex flex-row justify-between items-center w-full">
-          <Logo variant="white" />
+          <Logo variant="white" className="-my-3 py-0" />
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             {open ? (
               <IconX className="text-black/90" onClick={() => setOpen(!open)} />
@@ -247,7 +247,7 @@ const MobileNav = ({ navItems, visible }: NavbarProps) => {
                 duration: 0.2,
                 ease: "easeInOut",
               }}
-              className="flex rounded-2xl absolute top-16 backdrop-blur-xl bg-white/95 inset-x-0 z-50 flex-col items-start justify-start gap-4 w-full px-6 py-6 shadow-lg"
+              className="flex rounded-2xl absolute top-10 backdrop-blur-xl bg-white/95 inset-x-0 z-50 flex-col items-start justify-start gap-4 w-full px-6 py-6 shadow-lg"
             >
               {navItems.map(
                 (navItem: { link: string; name: string }, idx: number) => (
