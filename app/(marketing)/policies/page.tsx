@@ -12,10 +12,6 @@ export default function PoliciesPage() {
           <h1 className="mt-3 text-4xl font-bold tracking-tight text-black">
             Policies and legal documents
           </h1>
-          <p className="mt-4 text-base leading-7 text-neutral-700">
-            Separate pages for the core marketplace documents used across UNIA&apos;s
-            website and mobile app.
-          </p>
         </div>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">

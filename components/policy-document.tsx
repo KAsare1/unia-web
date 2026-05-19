@@ -39,19 +39,6 @@ export function PolicyDocumentPage({ document }: PolicyDocumentProps) {
 
         <div className="grid gap-8 lg:grid-cols-[1.2fr_2.2fr]">
           <aside className="space-y-6">
-            <div className="rounded-2xl border border-neutral-200 bg-white p-6">
-              <h2 className="text-sm font-semibold uppercase tracking-[0.16em] text-neutral-500">
-                Key Points
-              </h2>
-              <ul className="mt-4 space-y-3 text-sm leading-6 text-neutral-700">
-                {document.keyPoints.map((point) => (
-                  <li key={point} className="flex gap-3">
-                    <span className="mt-2 h-2 w-2 rounded-full bg-blue-600" />
-                    <span>{point}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
 
             <div className="rounded-2xl border border-neutral-200 bg-white p-6">
               <h2 className="text-sm font-semibold uppercase tracking-[0.16em] text-neutral-500">
@@ -81,16 +68,24 @@ export function PolicyDocumentPage({ document }: PolicyDocumentProps) {
             {document.sections.map((section) => (
               <section
                 key={section.title}
-                className="rounded-2xl border border-neutral-200 bg-white p-6"
+                className="mb-8"
               >
-                <h2 className="text-2xl font-bold text-black">{section.title}</h2>
+                <h2 className="text-xl font-bold text-black">{section.title}</h2>
                 {section.intro ? (
                   <p className="mt-3 text-[15px] leading-7 text-neutral-700">
                     {section.intro}
                   </p>
                 ) : null}
+                {section.paragraphs?.map((paragraph) => (
+                  <p
+                    key={paragraph}
+                    className="mt-4 text-[15px] leading-7 text-neutral-700"
+                  >
+                    {paragraph}
+                  </p>
+                ))}
                 {section.bullets?.length ? (
-                  <ul className="mt-4 list-disc space-y-3 pl-5 text-[15px] leading-7 text-neutral-700 marker:text-blue-600">
+                  <ul className="mt-4 list-disc space-y-2 pl-5 text-[15px] leading-7 text-neutral-700 marker:text-blue-600">
                     {section.bullets.map((bullet) => (
                       <li key={bullet}>{bullet}</li>
                     ))}
@@ -98,7 +93,6 @@ export function PolicyDocumentPage({ document }: PolicyDocumentProps) {
                 ) : null}
               </section>
             ))}
-
           </main>
         </div>
       </div>
