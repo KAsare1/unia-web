@@ -1,4 +1,4 @@
-const APP_STORE_URL = "https://testflight.apple.com/join/thyDyeUa";
+const APP_STORE_URL = "https://apps.apple.com/us/app/unia/id6751509781";
 const PLAY_STORE_URL =
   "https://play.google.com/store/apps/details?id=com.astra.affordables&pcampaignid=web_share";
 
